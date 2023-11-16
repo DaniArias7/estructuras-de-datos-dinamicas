@@ -108,9 +108,9 @@ public class TreeTraversal
 
                 currentNode = stack.Pop();
 
-                Console.ForegroundColor = ConsoleColor.Blue; // Set color to blue for callback results
+                Console.ForegroundColor = ConsoleColor.Blue;
                 callback(currentNode);
-                Console.ResetColor(); // Reset color to default
+                Console.ResetColor();
 
                 currentNode = currentNode.Right;
             }
